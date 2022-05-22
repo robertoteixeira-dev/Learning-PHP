@@ -1,4 +1,11 @@
 <?php
+//Comentário
+#Comentário
+/*
+Comentário de multiplas linhas
+*/
+
+// VARIABLE ---------------
 
 const CONSTANT = 18;
 $name = "Lucas";
@@ -13,6 +20,9 @@ $fruits = Array("banana", "apple", "cherry", 2, true);
 //print($price."<br/>");
 
 print_r($fruits);
+
+
+// CONDITIONAL --------------- 
 
 $age = 12;
 
@@ -38,6 +48,8 @@ switch($age) {
 }
 
 echo "<br/>fruit: ".$fruits[1];
+
+// LOOP ---------------
 
 for($i=0; $i < count($fruits); $i++){
     echo "<br/>fruit: ".$fruits[$i];
@@ -73,6 +85,8 @@ echo "<br/><br/>";
 
 echo "name: ".$person["name"]." age: ".$person["age"];
 
+// FUNCTION ---------------
+
 function sum($x, $y) {
     return $x + $y;
 }
@@ -84,6 +98,9 @@ echo sum(5, 10);
 echo "<br/><br/>";
 
 echo $_GET["name"];
+
+
+// CLASS ---------------
 
 class Animal {
     public $name;
@@ -119,4 +136,12 @@ echo Animal::$paws;
 
 
 
+//CURSO DE PHP (PT/ES)
 
+
+
+
+
+
+
+?>
