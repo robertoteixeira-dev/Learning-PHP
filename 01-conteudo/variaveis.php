@@ -29,6 +29,22 @@ teste();
 echo "<br>O valor de x fora: $x";
 echo "<br>O valor de z fora: $z";
 
+
+/*
+A VARIABLE VARIABLES
+It take the value of a variable and put as the name
+of another variable
+*/
+
+$foo = 'bar';
+
+$$foo = 'baz';
+
+echo $foo, $bar;
+echo "$foo, ${$foo}";
+
+
+
 ?>
 
 

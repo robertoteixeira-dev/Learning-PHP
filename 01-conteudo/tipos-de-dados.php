@@ -12,6 +12,56 @@ TIPOS DE DADOS
 
 */
 
+/*
+DATA TYPES AND TYPE CASTING
+
+1. Scalar Ttypes
+
+- String: Palavras e frases
+- Integer: Qualquer número inteiro (no decimal) 1, 2, 3
+- Float: Números decimais (decimal) 1.6, 2.4, 3,3
+- Boolean: True/False
+
+2. Compound Types
+
+- Array: Matriz de dados 
+$companies = [1 ,2, 3, 'a, true];  
+echo $companies;
+print_r($companies);
+
+
+- Object: Objetos que contem atributos dentro dele
+- Callable
+- Iterable
+
+3. Special Types
+
+- Resouce
+- Null: Nulo
+
+
+PHP is dynamically typed or also known as weekly 
+typed language where you are not required to define the type
+of your variable and also the type of the variable can
+change after it has been defined. 
+
+Dynamically typed language means that the type checking 
+happens at run time while statically typed language maeans
+that type checking happens at compile time (JAVA, C#)
+
+PHP is more flexible 
+
+
+TO SEE THE TYPE OF THE VARIABLE
+
+var_dump($variable);
+gettye($variable);
+
+
+
+*/
+
+
 //STRING
 $exemplo1 = "Roberto"; //String
 
@@ -64,6 +114,26 @@ echo $filme->categoria;
 
 $x = null;
 var_dump($x);
+
+function sum($x, $y){
+    return $x + $y;
+}
+
+echo sum(2, 3);
+// We have to specify that we want a integer, so put int
+
+function sum2(int $x2, int $y2){
+    //here, if we want to, we can change puting $x = 5.5 and changing it into float
+    return $x2 + $y2;
+}
+
+echo sum2(2, 3);
+
+// I can put something to specify all as integer
+
+// declare(strict_types=1); it should be in the top
+// I can change it into float after if I want to puting float $x for example
+
 
 ?>
 
