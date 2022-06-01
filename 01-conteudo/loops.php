@@ -22,6 +22,9 @@ while ($y <= 5){
 }
 
 echo "<br></br>";
+// continue - skip the conditional the move on, for exemplo, if I want to skip the par if($i % 2 === 0){$++ continue: }
+// break - to stop
+
 
 //DO WHILE
 $a = 1;
@@ -33,21 +36,55 @@ do {
 
 echo "<br></br>";
 
+
+
 //FOR 
 for ($b = 0; $b <= 10; $b++){
     echo "O número é: $b <br>";
 }
 
+/* TO SHOW EACH LETTER IN EACH LINE */
+$text = 'Hello World';
+for($i = 0; $i < strlen($text); $i++){
+    echo $text[$i] . '<br />';
+}
+
 
 echo "<br></br>";
 
-//FOREACH
+
+
+//FOREACH -arrays or objects
 $cores = ["azul", "amarelo", "verde"];
 
 foreach ($cores as $cor){
     echo "A cor é $cor <br>";
 }
+//We could acess the key puting as $key => $cor
 
+//ACEESS THE ELEMENTS INCLUINDO AN ARRAY OF ANOTHER ARRAY
+$user = [
+    'name' => 'Roberto',
+    'email' => 'roberto@gmail.com',
+    'skills' => ['php', 'react', 'javascript'],
+];
 
+foreach($user as $key => $value){
+    echo $key . ': ' . json_encode($value). '<br/>';
+}
+
+/*
+
+I could also create an IF:
+ if (is_array($value)){
+    foreach($value as $skill){
+        echo $skill . ' - ';
+    }else{
+        echo $value
+    }
+    echo '<br/>';
+}
+
+*/
 
 ?>
