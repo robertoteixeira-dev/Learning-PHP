@@ -1,6 +1,8 @@
 <?php
 
-$array = [1, 2, 2, 2, 3, 3];
+//$array = [1, 2, 2, 2, 3, 3];
+
+$array = array_slice($argv, 1);
 
 function histogram(array $value) {
     
@@ -12,10 +14,10 @@ function histogram(array $value) {
 echo histogram($array); 
 //It returns the associative array 
 
-echo '<br/>';
+/*echo '<br/>';
 
 echo histogram([1, 2, 2, 2, 3, 3,]); 
-//It also returns the associative array 
+//It also returns the associative array */
 
 
 ?>
