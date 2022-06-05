@@ -160,10 +160,4 @@ echo preg_match("/^M.*y$/", $string); //If starts with M and ands with e
 
 
 
-
-
-
-
-
-
 ?>

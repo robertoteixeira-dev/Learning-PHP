@@ -11,6 +11,7 @@ function histogram(array $value) {
     return $result;
 }
 
+
 echo histogram($array); 
 //It returns the associative array 
 

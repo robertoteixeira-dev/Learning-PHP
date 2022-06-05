@@ -4,9 +4,6 @@
 A control structure allows to group multiple
 statements and control the flow of the code
 
-
-
-
 DIFFERENCE BETWEEN ELSEIF AND ELSE IF:
 - 
 

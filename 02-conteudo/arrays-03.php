@@ -1,4 +1,5 @@
 <?php
+// ARRAY FUNCTION 
 
 function prettyPrintArray(array $value){
     echo '<pre>';
@@ -103,9 +104,7 @@ fn($sum, $item) => $sum + $item['qty'] * $item['price']);
 
 echo $total;
 
-
 echo "<br/>";
-
 
 // ARRAY SEARCH - Finding the key
 
@@ -115,9 +114,7 @@ $key = array_search('b', $array8);
 
 var_dump($key);
 
-
 echo "<br/>";
-
 
 // FIND DIFFERENCES BETWEEN TWO ARRAYS
 

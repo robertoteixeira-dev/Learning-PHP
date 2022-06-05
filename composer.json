@@ -1,6 +1,10 @@
 {
     "require": {
-        "ramsey/uuid": "^4.3"
+        "ramsey/uuid": "^4.3",
+        "twig/twig": "^3.4",
+        "smarty/smarty": "^4.1",
+        "mustache/mustache": "^2.14",
+        "monolog/monolog": "1.26"
     },
     "autoload": {
         "psr-4": {
